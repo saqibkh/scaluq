@@ -150,6 +150,7 @@ TYPED_TEST(CircuitTest, CircuitBasic) {
     constexpr Precision Prec = TestFixture::Prec;
     constexpr ExecutionSpace Space = TestFixture::Space;
     circuit_test<Prec, Space>();
+    ADD_FAILURE() << "deliberate break check";
 }
 
 template <Precision Prec, ExecutionSpace Space>
